@@ -19,16 +19,22 @@ if (numsuitcases > 2) {
     alert("That's way to many. You'll have to pack more lightlhy")
 } if (numsuitcases <= 2){
     alert('Perfect! you certainly fit in the spaceship')
-}  alert("You're allowed to bring one compainon animal with you.")
+}  alert("You're allowed to bring two compainon animal with you.")
 const companionType = prompt('What kind of animal would you like to bring?')
 let companionName = prompt("What is your compainons name?")
+
+const companionType2 = prompt("what is your second kind of animal you're bringing? ")
+let companionName2 = prompt (`What is your second companions Name`)
+
+
 let firstLetter = companionName[0]
 firstLetter = firstLetter.toUpperCase()
 
 let otherletters = companionName.slice(1)
 otherletters = otherletters.toLowerCase()
 companionName = firstLetter + otherletters
-alert(`Cool, so you're bringing ${companionName} the ${companionType}`)
+alert(`Cool, so you're bringing ${companionName} the ${companionType} 
+ and ${companionName2} the ${companionType2}`)
  
 alert('NASA has a interior design team offering to outfit your space ship.');
 alert(`You have a couple of options for the interior decor of your ship. Your options are:
@@ -52,7 +58,8 @@ if (decorChoice === 'A') {
     decor = 'Victorian-era'
  }
 
-  alert(`${username} and ${companionName}, surfing the celeastial abyss in a ${decor} spaceship.`)
+  alert(`${username} and ${companionName}, 
+  surfing the celeastial abyss in a ${decor} spaceship.... you lost ${companionName2}.`)
 
  let timer = 5
  while (timer >  0) {
